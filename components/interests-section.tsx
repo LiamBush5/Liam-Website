@@ -4,6 +4,7 @@ import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 
+
 interface Interest {
   name: string
   description: string
