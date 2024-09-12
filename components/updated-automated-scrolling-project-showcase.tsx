@@ -580,7 +580,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Satirical Headline Detector",
+    title: "Don't Eat The Onion: Satirical Headline Detector",
     description: "Implemented multiple ML models (Logistic Regression, Random Forest, 1D CNN, LSTM, GPT variants) for classifying 'The Onion' vs. real headlines, achieving 87% accuracy with 1D CNN and LSTM models.",
     image: "/images/onion.png",
     technologies: ["Python", "TensorFlow", "scikit-learn", "NLTK", "OpenAI API"],
