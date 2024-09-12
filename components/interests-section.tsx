@@ -4,7 +4,7 @@ import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 
-
+//the
 interface Interest {
   name: string
   description: string
@@ -15,7 +15,7 @@ const interests: Interest[] = [
   {
     name: "Marathon Running",
     description: "Boston Qualifier, PR 2:44",
-    image: "/images/running.jpg"
+    image: "/images/run2.jpg"
   },
   {
     name: "European Backpacking",
@@ -30,7 +30,7 @@ const interests: Interest[] = [
   {
     name: "Skiing",
     description: "Since I Could Walk",
-    image: "/placeholder.svg?height=400&width=400"
+    image: "/images/ski.jpg"
   },
   {
     name: "Hiking",
@@ -39,8 +39,8 @@ const interests: Interest[] = [
   },
   {
     name: "Rowing",
-    description: "Perplexity Campus Strategist",
-    image: "/placeholder.svg?height=400&width=400"
+    description: "Walked onto Varsity Rowing Team",
+    image: "/images/row.jpg"
   }
 ]
 
