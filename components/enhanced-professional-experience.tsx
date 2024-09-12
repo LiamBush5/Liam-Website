@@ -25,7 +25,15 @@ const timelineData: TimelineItem[] = [
     position: "Technical Product Management Intern",
     location: "Washington, DC",
     date: "Summer 2024",
-    achievements: [],
+    achievements: [
+      "Cut proposal writing time by 70%, saving $300K+ annually, by developing RAG AI models on 1,500+ GSA proposals and 100+ legal documents, now handling 5,000+ queries/month.",
+      "Integrated an AI Q&A analytics dashboard to boost model accuracy and deliver real-time insights to the C-suite.",
+      "Led end-to-end product development initiatives, conducting 20+ stakeholder interviews across 10 departments, identified 57 innovations and 56 areas for potential innovation.",
+      "Authored 10 comprehensive innovation reports capturing insights and improvements to enhance proposal writing team's capability and cross-team communication.",
+
+
+
+    ],
     skills: ["Product Management", "Technical Leadership"]
   },
   {
@@ -35,11 +43,7 @@ const timelineData: TimelineItem[] = [
     location: "Washington, DC",
     date: "Summer 2023/Academic Year 2023-2024",
     achievements: [
-      "Cut proposal writing time by 70%, saving $300K+ annually, by developing AI models on 1,500+ GSA proposals and 100+ legal documents, now handling 5,000+ queries/month.",
       "Independently architected and implemented a full-stack, enterprise AI model using React, JavaScript, Python, Pinecone DB hosted on DigitalOcean droplet and EC2 instance.",
-      "Led end-to-end product development initiatives, conducting 20+ stakeholder interviews across 10 departments, identified 57 innovations and 56 areas for potential innovation.",
-      "Integrated an AI Q&A analytics dashboard to boost model accuracy and deliver real-time insights to the C-suite.",
-      "Authored 10 comprehensive innovation reports capturing insights and improvements to enhance proposal writing team's capability and cross-team communication.",
       "Built AI model training dashboard, enabling users to create/train models on PDF, XML, TXT files in under 2 minutes.",
       "Presented a keynote on AI integration strategies to executives and 100+ employees at annual meeting."
     ],
@@ -59,7 +63,7 @@ const timelineData: TimelineItem[] = [
   },
   {
     company: "Freeware4Kids",
-    logo: "/placeholder.svg?height=50&width=50",
+    logo: "/images/f2.png",
     position: "Founder",
     location: "Wyoming, DE",
     date: "2018 - 2022",

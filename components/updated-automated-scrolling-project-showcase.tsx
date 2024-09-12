@@ -1,15 +1,17 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
-import { motion, useAnimationFrame } from 'framer-motion'
+
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface Project {
-  id: number
-  title: string
-  description: string
-  image: string
-  technologies: string[]
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
 }
+
 
 const projects: Project[] = [
   {
@@ -30,7 +32,7 @@ const projects: Project[] = [
     id: 3,
     title: "InstaLite Social Media Platform",
     description: "Developed a full-stack Instagram-like social media platform with features including user authentication, image posting, friend management, real-time chat, AI-powered content recommendations, and natural language search. Implemented scalable backend services, utilized cloud databases and storage, and integrated advanced AI/ML capabilities for content ranking and search.",
-    image: "/api/placeholder/300/200",
+    image: "/images/instalite.png",
     technologies: ["Node.js", "React", "AWS", "Python", "Apache Spark", "Apache Kafka", "TensorFlow", "GPT"],
   },
   {
@@ -104,15 +106,16 @@ export function UpdatedAutomatedScrollingProjectShowcase() {
 }
 
 interface ProjectCardProps {
-  project: Project
-  isExpanded: boolean
-  onToggleExpand: () => void
+  project: Project;
+  isExpanded: boolean;
+  onToggleExpand: () => void;
 }
 
 function ProjectCard({ project, isExpanded, onToggleExpand }: ProjectCardProps) {
-  const maxLength = 100 // Maximum number of characters to show initially
+  const [isHovered, setIsHovered] = useState(false);
+  const maxLength = 100; // Maximum number of characters to show initially
 
-  const truncatedDescription = project.description.slice(0, maxLength) + (project.description.length > maxLength ? '...' : '')
+  const truncatedDescription = project.description.slice(0, maxLength) + (project.description.length > maxLength ? '...' : '');
 
   return (
     <motion.div
@@ -120,13 +123,13 @@ function ProjectCard({ project, isExpanded, onToggleExpand }: ProjectCardProps) 
       transition={{ duration: 0.3 }}
       className={`${isExpanded ? 'h-[600px]' : 'h-[450px]'} transition-all duration-300`}
     >
-      <div className="w-[300px] h-full bg-gray-900 text-white shadow-2xl flex flex-col rounded-lg overflow-hidden">
+      <div className="w-[300px] h-full bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden relative">
         <div className="p-6 flex flex-col h-full">
           <h3 className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text mb-2">
             {project.title}
           </h3>
           <div className="flex-grow mb-4">
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               {isExpanded ? project.description : truncatedDescription}
             </p>
             <button
@@ -138,26 +141,57 @@ function ProjectCard({ project, isExpanded, onToggleExpand }: ProjectCardProps) 
             </button>
           </div>
           {!isExpanded && (
-            <div className="relative h-40 mb-4">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover rounded-md"
-              />
+            <div
+              className="relative h-40 mb-4 flex items-center justify-center overflow-visible"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <AnimatePresence>
+                {isHovered ? (
+                  <motion.div
+                    key="enlarged-container"
+                    className="absolute z-10 rounded-lg shadow-xl bg-gray-800 p-2"
+                    initial={{ width: '100%', height: '100%', opacity: 0 }}
+                    animate={{ width: '200%', height: '200%', opacity: 1 }}
+                    exit={{ width: '100%', height: '100%', opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </motion.div>
+                ) : (
+                  <motion.img
+                    key="normal"
+                    src={project.image}
+                    alt={project.title}
+                    className="max-w-full max-h-full object-contain"
+                    initial={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                )}
+              </AnimatePresence>
             </div>
           )}
-          <div className="flex flex-wrap gap-2 mt-auto">
-            {project.technologies.map((tech, index) => (
-              <span
-                key={index}
-                className="px-2 py-1 text-xs font-semibold text-purple-200 bg-purple-900 rounded-full"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+          {isExpanded && (
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {project.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="px-2 py-1 text-xs font-semibold text-purple-200 bg-purple-900 rounded-full"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
+
+export default ProjectCard;
