@@ -18,7 +18,7 @@ const interests: Interest[] = [
     image: "/images/j.jpg"
   },
   {
-    name: "European Backpacking",
+    name: "Backpacking",
     description: "Through 6 Countries",
     image: "/images/backpack.png"
   },

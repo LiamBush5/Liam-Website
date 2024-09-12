@@ -579,6 +579,20 @@ const projects: Project[] = [
     technologies: ["Python", "AI", "JavaScript", "Node.js"],
   },
   {
+    id: 5,
+    title: "Freeware4Kids",
+    description: "Won Delaware Youth Volunteer of The Year",
+    image: "/images/freeware2.png",
+    technologies: ["Chrome OS"],
+  },
+  {
+    id: 6,
+    title: "AI Academy Service Project",
+    description: "Created and implemented lesson plans for two one-week courses to instruct 50 high school students on how to build Python AI models to play popular games such as Google Dino Run and Flappy Bird.",
+    image: "/images/cr.jpg",
+    technologies: ["Python, Lesson Planning"],
+  },
+  {
     id: 2,
     title: "Don't Eat The Onion: Satirical Headline Detector",
     description: "Implemented multiple ML models (Logistic Regression, Random Forest, 1D CNN, LSTM, GPT variants) for classifying 'The Onion' vs. real headlines, achieving 87% accuracy with 1D CNN and LSTM models.",
@@ -598,7 +612,8 @@ const projects: Project[] = [
     description: "Developed a full-stack web application for managing and displaying stamp collections, featuring CRUD operations, image uploads to AWS S3, and organization of stamps into sets. The system includes a responsive React frontend with Tailwind CSS for styling, a Node.js/Express backend with Sequelize ORM for database interactions, and RESTful API endpoints for stamp management.",
     image: "/images/stamp.webp",
     technologies: ["React", "Node.js", "Express", "Sequelize", "SQLite", "AWS S3", "Tailwind CSS"],
-  }
+  },
+
 ]
 
 export function UpdatedAutomatedScrollingProjectShowcase() {
