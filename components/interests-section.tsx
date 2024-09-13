@@ -34,7 +34,7 @@ const interests: Interest[] = [
   },
   {
     name: "Hiking",
-    description: "Hiking Zion, and Tahoe",
+    description: "Zion, and Tahoe",
     image: "/images/hiking.png"
   },
   {
