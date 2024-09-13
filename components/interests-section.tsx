@@ -33,6 +33,7 @@ const interests: Interest[] = [
     image: "/images/ski.jpg"
   },
   {
+
     name: "Hiking",
     description: "Zion and Tahoe",
     image: "/images/molly.png"
