@@ -19,7 +19,7 @@ const interests: Interest[] = [
   },
   {
     name: "Traveling",
-    description: "Backpacking Through 6 Countries",
+    description: "Backpacked Through 6 Countries",
     image: "/images/berlin.JPG"
   },
   {
