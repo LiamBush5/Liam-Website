@@ -588,7 +588,7 @@ const projects: Project[] = [
   {
     id: 6,
     title: "AI Academy Service Project",
-    description: "Created and implemented lesson plans for two one-week courses to instruct 50 high school students on how to build Python AI models to play popular games such as Google Dino Run and Flappy Bird.",
+    description: "Created and implemented lesson plans for two one-week courses to instruct high school students on how to build Python AI models to play popular games such as Google Dino Run and Flappy Bird.",
     image: "/images/cr.jpg",
     technologies: ["Python, Lesson Planning"],
   },
