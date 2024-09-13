@@ -223,7 +223,7 @@ export default function Footer() {
                             <Mail size={24} />
                             <span className="sr-only">Email</span>
                         </a>
-                        <a
+                        {/* <a
                             href="https://docs.google.com/document/d/1GCMiVdIjd8r_NSVbPzVulySffUVBHNPs97sW2XZs0ac/edit?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -231,7 +231,7 @@ export default function Footer() {
                         >
                             <FileText size={24} />
                             <span className="sr-only">Resume</span>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
