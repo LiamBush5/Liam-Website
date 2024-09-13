@@ -18,9 +18,9 @@ const interests: Interest[] = [
     image: "/images/j.jpg"
   },
   {
-    name: "Backpacking",
-    description: "Through 6 Countries",
-    image: "/images/backpack.png"
+    name: "Traveling",
+    description: "Backpacking Through 6 Countries",
+    image: "/images/berlin.JPG"
   },
   {
     name: "Philadelphia Sports",
@@ -35,7 +35,7 @@ const interests: Interest[] = [
   {
     name: "Hiking",
     description: "Zion, and Tahoe",
-    image: "/images/hiking.png"
+    image: "/images/molly.png"
   },
   {
     name: "Rowing",
