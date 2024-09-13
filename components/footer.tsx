@@ -9,7 +9,7 @@ export default function Footer() {
                         <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
                             Liam Bush
                         </h2>
-                        <p className="text-gray-400 mt-1">Upenn Senior | Software Engineer </p>
+                        <p className="text-gray-400 mt-1">UPenn Senior | Software Engineer </p>
                     </div>
                     <nav className="flex flex-wrap justify-center md:justify-end space-x-6 mb-4 md:mb-0">
                         <a href="#experience" className="text-gray-300 hover:text-white transition-colors">
