@@ -49,10 +49,6 @@ export function InterestsSection() {
     <section className="w-full bg-black py-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
-          // className="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text"
-          // initial={{ opacity: 0, y: -50 }}
-          // animate={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.5 }}
           className="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text leading-tight" // Added leading-tight
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
