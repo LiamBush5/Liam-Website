@@ -53,7 +53,7 @@ const timelineData: TimelineItem[] = [
   {
     company: "6th Man Ventures",
     logo: "/images/6th.jpeg",
-    position: "Investment Intern",
+    position: "Investment Analyst Intern",
     location: "NY, NY",
     date: "Summer 2022/Academic Year 2022",
     achievements: [
