@@ -23,39 +23,36 @@ const timelineData: TimelineItem[] = [
   {
     company: "Valiant Solutions",
     logo: "/images/val.jpeg",
-    position: "Technical Product Management Intern",
+    position: "Technical Product Manager",
     location: "Washington, DC",
-    date: "Summer 2024",
+    date: "2024 - Present",
     achievements: [
-      "Cut proposal writing time by 70%, saving $300K+ annually, by developing RAG AI models on 1,500+ GSA proposals and 100+ legal documents, now handling 5,000+ queries/month.",
-      "Integrated an AI Q&A analytics dashboard to boost model accuracy and deliver real-time insights to the C-suite.",
-      "Led end-to-end product development initiatives, conducting 20+ stakeholder interviews across 10 departments, identified 57 innovations and 56 areas for potential innovation.",
-      "Authored 10 comprehensive innovation reports capturing insights and improvements to enhance proposal writing team's capability and cross-team communication.",
-
-
-
+      "Cut proposal writing time by 70%, saving $300K+ annually, by developing and releasing RAG AI models trained on 1,500+ GSA proposals, 100+ legal documents, and company Salesforce CRM now handling 5,000+ queries/month.",
+      "Built a high-accuracy predictive analytics model using Random Forests, boosting proposal win prediction accuracy by 35% and optimizing team performance by 20%.",
+      "Developed and launched a data pipeline that accelerated AI model creation with sub-2-minute training times, by designing a user-friendly dashboard for processing PDF, XML, and TXT files.",
+      "Authored 10 innovation reports, identifying 57 opportunities for product improvement by synthesizing user feedback and stakeholder interviews (20+ across 10 departments), directly shaping the product roadmap."
     ],
-    skills: ["Product Management", "Technical Leadership"]
+    skills: ["Product Management", "AI/ML", "Data Science", "Technical Leadership"]
   },
   {
     company: "Valiant Solutions",
     logo: "/images/val.jpeg",
-    position: "AI/ML Intern",
+    position: "Software Engineer Intern",
     location: "Washington, DC",
-    date: "Summer 2023/Academic Year 2023-2024",
+    date: "2023 - 2024",
     achievements: [
-      "Independently architected and implemented a full-stack, enterprise AI model using React, JavaScript, Python, Pinecone DB hosted on DigitalOcean droplet and EC2 instance.",
-      "Built AI model training dashboard, enabling users to create/train models on PDF, XML, TXT files in under 2 minutes.",
+      "Built an AI Q&A analytics dashboard to boost model accuracy by 40% and deliver real-time insights to the C-suite.",
+      "Independently architected and implemented a full-stack, enterprise AI model using React, JavaScript, Python, Pinecone DB hosted on AWS.",
       "Presented a keynote on AI integration strategies to executives and 100+ employees at annual meeting."
     ],
-    skills: ["AI/ML", "Full-stack Development", "Product Development", "Data Analytics"]
+    skills: ["Software Engineering", "AI/ML", "Full-stack Development", "Data Analytics"]
   },
   {
     company: "6th Man Ventures",
     logo: "/images/6th.jpeg",
-    position: "Investment Intern",
+    position: "Investment Analyst Intern",
     location: "NY, NY",
-    date: "Summer 2022/Academic Year 2022",
+    date: "2022 - 2023",
     achievements: [
       "Authorized 20+ investment memos and conducted due diligence through meetings with founders and engineers.",
       "Published a research paper on zero knowledge proofs (ZKP) and led internal seminars on implementation best practices."
@@ -70,7 +67,7 @@ const timelineData: TimelineItem[] = [
     date: "2018 - 2022",
     achievements: [
       "Facilitated collection of gently used, outdated laptops and converted them from Windows to Chrome OS.",
-      "Distributed 350+ upcycled devices ($37,000 worth) to students in need across 8 distribution events."
+      "Distributed 350+ upcycled devices (value $37,000) to students in need across 8 distribution events."
     ],
     skills: ["Entrepreneurship", "Non-profit Management", "Community Outreach"]
   }
